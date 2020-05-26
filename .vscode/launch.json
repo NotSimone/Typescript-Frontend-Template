@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Build and Debug",
+            "file": "${workspaceFolder}/src/main.html",
+            "webRoot": "${workspaceFolder}/src",
+            "preLaunchTask": "${defaultBuildTask}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Debug",
+            "file": "${workspaceFolder}/src/main.html",
+            "webRoot": "${workspaceFolder}/src"
+        }
+    ]
+}
