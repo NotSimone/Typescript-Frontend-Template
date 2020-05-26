@@ -5,7 +5,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Build and Debug",
-            "file": "${workspaceFolder}/src/main.html",
+            "file": "${workspaceFolder}/src/index.html",
             "webRoot": "${workspaceFolder}/src",
             "preLaunchTask": "${defaultBuildTask}"
         },
@@ -13,7 +13,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Debug",
-            "file": "${workspaceFolder}/src/main.html",
+            "file": "${workspaceFolder}/src/index.html",
             "webRoot": "${workspaceFolder}/src"
         }
     ]
