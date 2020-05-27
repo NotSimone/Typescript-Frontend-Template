@@ -9,6 +9,7 @@ module.exports = {
     entry: path.join(__dirname, "src", "js", "main.ts"),
 
     // Build settings
+    target: "web",
     output: {
         filename: "main.js",
         path: path.join(__dirname, "src", "js"),
@@ -22,6 +23,18 @@ module.exports = {
     },
     resolve: {
         extensions: [".tsx", ".ts", ".js"]
+    },
+
+    // Dev server
+    devServer: {
+        contentBase: path.join(__dirname, "src"),
+        compress: true,
+        port: 8080,
+        // For live reload
+        publicPath: "/js/",
+        watchContentBase: true,
+        // Needed for VSCode debugging
+        writeToDisk: true
     },
 
     // Copy in css files so npm keeps them up to date for us

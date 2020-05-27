@@ -4,17 +4,10 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Build and Debug",
-            "file": "${workspaceFolder}/src/index.html",
+            "name": "Chrome Debug",
+            "url": "http://localhost:8080/",
             "webRoot": "${workspaceFolder}/src",
-            "preLaunchTask": "${defaultBuildTask}"
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Debug",
-            "file": "${workspaceFolder}/src/index.html",
-            "webRoot": "${workspaceFolder}/src"
+            "sourceMaps": true
         }
     ]
 }
