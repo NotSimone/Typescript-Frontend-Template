@@ -24,6 +24,10 @@ module.exports = {
     resolve: {
         extensions: [".tsx", ".ts", ".js"]
     },
+    // fs error: https://github.com/webpack-contrib/css-loader/issues/447
+    node: {
+        fs: "empty"
+    },
 
     // Dev server
     devServer: {
