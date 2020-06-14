@@ -6,12 +6,14 @@ module.exports = {
     context: path.join(__dirname, "src"),
     mode: "development",
     devtool: "source-map",
-    entry: path.join(__dirname, "src", "js", "main.ts"),
 
     // Build settings
     target: "web",
+    entry: {
+        main: path.join(__dirname, "src", "js", "main.ts"),
+    },
     output: {
-        filename: "main.js",
+        filename: "[name].js",
         path: path.join(__dirname, "src", "js"),
     },
     module: {
